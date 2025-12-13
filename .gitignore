@@ -1,0 +1,16 @@
+# Jekyll build output
+site/_site/
+site/.sass-cache/
+site/.jekyll-cache/
+site/.jekyll-metadata/
+
+# Bundler (local dev)
+site/vendor/
+
+# Private dev notes
+DEV_NOTES.md
+
+# OS / editor noise
+.DS_Store
+.vscode/
+.idea/
