@@ -2,6 +2,7 @@ title: "Miraj Jara"
 tagline: "Builder • Data Engineer • Avid Learner"
 description: "Low-volume notes on engineering, systems, and what I’m learning."
 url: "https://mirajjara.com"
+baseurl: ""
 timezone: "America/New_York"
 lang: en
 
