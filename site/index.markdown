@@ -1,9 +1,18 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
+title: ""
+permalink: /
 ---
 
+{% include home-hero.html %}
 
-Hot reload check: Sat Dec 13 16:10:39 EST 2025
+## Writing
+Notes on engineering, systems, and things learned by building.
+
+## Projects
+
+**Salis**  
+AI-driven checkout system for produce, built end to end across edge and cloud.
+
+**Personal Site Infrastructure**  
+Static site with containerized builds and nginx deployment.

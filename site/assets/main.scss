@@ -1,0 +1,279 @@
+---
+---
+@import "minima";
+
+/* ═══════════════════════════════════════════════════════════════
+   MIRAJ'S THEME • DARK + TRUE RED ACCENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --accent: #dc2626;
+  --accent-hover: #ef4444;
+  --bg: #070709;
+  --surface: #0d0d11;
+  --surface-2: rgba(13, 13, 17, 0.72); 
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border: rgba(255, 255, 255, 0.10);
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BASE
+   ───────────────────────────────────────────────────────────── */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-content {
+  background: transparent;
+  line-height: 1.7;
+}
+
+.post-content > p,
+.page-content p {
+  margin-bottom: 1.3em;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LINKS
+   ───────────────────────────────────────────────────────────── */
+
+a {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+a:visited {
+  color: #dc2626;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+a:focus-visible,
+.mj-btn:focus-visible {
+  outline: 2px solid var(--accent-hover);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYOUT
+   ───────────────────────────────────────────────────────────── */
+
+.site-header,
+.site-footer {
+  border-color: var(--border);
+  background: var(--surface-2);
+  backdrop-filter: blur(8px);
+}
+
+.site-nav .page-link {
+  color: var(--text);
+  opacity: 0.9;
+}
+.site-nav .page-link:hover {
+  color: var(--accent-hover);
+  opacity: 1;
+}
+
+.wrapper {
+  max-width: 980px;
+}
+
+.post-content,
+.page-content .wrapper {
+  max-width: 72ch;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TYPOGRAPHY
+   ───────────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2, h3 {
+  scroll-margin-top: 90px;
+}
+
+.post-title,
+.post-link {
+  color: var(--text);
+}
+.post-link:hover {
+  color: var(--accent-hover);
+}
+
+strong, b {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   COMPONENTS
+   ───────────────────────────────────────────────────────────── */
+
+.mj-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mj-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.mj-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  transition: border-color 0.2s ease;
+}
+
+.mj-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.mj-muted {
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CODE
+   ───────────────────────────────────────────────────────────── */
+
+pre, code {
+  border-color: var(--border);
+  border-radius: 6px;
+}
+
+pre {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  overflow-x: auto;
+  padding: 16px;
+}
+
+code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 6px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SELECTION
+   ───────────────────────────────────────────────────────────── */
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+::-moz-selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   HERO (photo left, copy right)
+   ───────────────────────────────────────────────────────────── */
+
+.mj-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr;
+  gap: 32px;
+  align-items: center;
+  margin: 28px 0 36px;
+}
+
+.mj-hero__media {
+  justify-self: start;
+  transform: translateX(-12px);
+}
+
+.mj-hero__img {
+  width: 100%;
+  max-width: 420px;
+  max-height: 520px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+}
+
+.mj-hero__title {
+  margin: 0 0 6px;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.mj-hero__tag {
+  margin: 0 0 16px;
+}
+
+.mj-hero__blurb {
+  margin: 0 0 18px;
+  color: var(--text);
+  opacity: 0.92;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.mj-hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mj-btn--ghost {
+  background: transparent;
+  color: var(--text) !important;
+  border: 1px solid var(--border);
+}
+.mj-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 860px) {
+  .mj-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .mj-hero__media {
+    transform: none;
+  }
+
+  .mj-hero__img {
+    width: 100%;
+    max-width: 520px;
+  }
+}

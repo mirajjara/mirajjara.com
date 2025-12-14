@@ -2,24 +2,48 @@
 permalink: /404.html
 layout: default
 ---
-
 <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
+  .error-container {
+    margin: 80px auto;
     max-width: 600px;
     text-align: center;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
+  
+  .error-container h1 {
+    margin: 0 0 20px;
+    font-size: 6em;
     line-height: 1;
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  
+  .error-container p {
+    margin: 12px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .error-container strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+  
+  .error-container a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+  }
+  
+  .error-container a:hover {
+    color: var(--accent-hover);
   }
 </style>
 
-<div class="container">
+<div class="error-container">
   <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p><strong>This page doesn't exist.</strong></p>
+  <p>Either it was never built, or you're testing my error handling. Either way, <a href="/">let's get you back home</a>.</p>
 </div>
