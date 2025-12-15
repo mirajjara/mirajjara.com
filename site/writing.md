@@ -4,7 +4,7 @@ title: Writing
 permalink: /writing/
 ---
 
-A few posts a year — usually about engineering, systems, and what I’m learning.
+A few posts a year usually about engineering, systems, and what I’m learning or thinking about.
 
 {% assign posts_count = site.posts | size %}
 {% if posts_count == 0 %}
