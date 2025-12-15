@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm Miraj. By day, I work as a Data Engineer. I build, maintain, and secure pipelines that support real business decisions. Outside of work, I build systems from scratch and think about how software creates leverage. I'm currently working on **Salis**, an AI-driven checkout system.
 
-On senior decision day in high school, when everyone else was wearing their future school's gear, I was completely lost. I enrolled in community college and picked computer science almost at random—mainly because a friend said that's what they were studying. It sounded cool. It ended up being one of the best decisions of my life. 
+On senior decision day in high school, when everyone else was wearing their future school's gear, I was completely lost. I enrolled in community college and picked computer science almost at random. Truthfully, it was because a friend said that's what they were studying. It sounded cool. It ended up being one of the best decisions of my life. 
 
 After COVID and transferring to my university, things clicked. Classes like data structures and computer systems pulled me in. I went on to lead my university's CS club and started building things end to end. That process hooked me. Over time, it pulled me deeper into data, infrastructure, and product thinking—the parts of software where systems meet the real world.
 
